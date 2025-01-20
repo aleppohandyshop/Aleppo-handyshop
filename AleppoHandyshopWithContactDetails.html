@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aleppo Handyshop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0056b3;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            color: #0056b3;
+            margin-bottom: 15px;
+        }
+        #home {
+            background-image: url('https://via.placeholder.com/1920x1080'); /* Replace with your desired image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+            padding: 50px 20px;
+            border-radius: 10px;
+        }
+        #home p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .product {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 15px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        footer {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="67B1D5F1-E833-43A5-83DF-532B55854577.jpeg" alt="Aleppo Handyshop Logo">
+    </header>
+    <nav>
+        <a href="#home">Startseite</a>
+        <a href="#new-phones">Neue Handys</a>
+        <a href="#used-phones">Gebrauchte Handys</a>
+        <a href="#sell-phone">Handy verkaufen</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+    <div class="container">
+        <section id="home" class="section">
+            <h2>Willkommen bei Aleppo Handyshop</h2>
+            <p>Wir bieten Ihnen die neuesten Smartphones, Zubehör und Reparaturdienste zu den besten Preisen. Wir sind hier, um Ihnen im 16. Bezirk von Wien zu dienen.</p>
+        </section>
+        <section id="new-phones" class="section">
+            <h2>Neue Handys</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="90674136-7F63-4C3F-8195-955BAAD11919.jpeg" alt="iPhone 15 Pro">
+                    <h3>iPhone 15 Pro</h3>
+                    <p>Die neueste Version von iPhone mit den besten Spezifikationen.</p>
+                </div>
+                <div class="product">
+                    <img src="EE848BB2-05A0-4C4C-8E71-336508EAC676.jpeg" alt="Samsung Galaxy A16">
+                    <h3>Samsung Galaxy A16</h3>
+                    <p>Ein Smartphone mit 5G-Technologie zu einem attraktiven Preis.</p>
+                </div>
+            </div>
+        </section>
+        <section id="used-phones" class="section">
+            <h2>Gebrauchte Handys</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="8C2B019A-FB59-4FAC-AA25-9116A8E9FCE5.jpeg" alt="iPhone Kamera">
+                    <h3>iPhone 12</h3>
+                    <p>Gebraucht in hervorragendem Zustand, mit Garantie.</p>
+                </div>
+                <div class="product">
+                    <img src="EE848BB2-05A0-4C4C-8E71-336508EAC676.jpeg" alt="Samsung Galaxy A10">
+                    <h3>Samsung Galaxy A10</h3>
+                    <p>Ein zuverlässiges, gebrauchtes Gerät zu einem erschwinglichen Preis.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sell-phone" class="section">
+            <h2>Handy verkaufen</h2>
+            <p>Füllen Sie das folgende Formular aus, um uns Details über Ihr Handy zu senden. Wir werden uns mit einem passenden Angebot bei Ihnen melden.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Ihr Name</label>
+                    <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefonnummer</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ihre Telefonnummer" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail</label>
+                    <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+                </div>
+                <div class="form-group">
+                    <label for="device-details">Details zum Handy</label>
+                    <textarea id="device-details" name="device-details" rows="5" placeholder="Marke, Modell, Zustand, Preisvorstellung..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="device-image">Bild des Handys</label>
+                    <input type="file" id="device-image" name="device-image" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <button type="submit">Absenden</button>
+                </div>
+            </form>
+        </section>
+        <section id="contact" class="section">
+            <h2>Kontakt</h2>
+            <p><strong>Adresse:</strong> Neulerchenfelder Strasse 51, 1160 Wien</p>
+            <p><strong>Telefonnummer:</strong> 00436602970199</p>
+            <p><strong>E-Mail:</strong> <a href="mailto:Aleppo1160@gmail.com">Aleppo1160@gmail.com</a></p>
+            <p><a href="https://goo.gl/maps">Standort auf Google Maps ansehen</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Aleppo Handyshop - Alle Rechte vorbehalten</p>
+        <p><a href="#home">Zurück nach oben</a></p>
+    </footer>
+</body>
+</html>
